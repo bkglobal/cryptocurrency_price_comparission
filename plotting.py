@@ -1,3 +1,9 @@
+import requests as r
+import datetime as dt
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
 def compare_price(symbol, comparison_symbol, all_data=True, aggregate=1, exchange=''):
 
     inp = int(input('1 for Minute\n2 for Hourly\n3 for Daily '))
@@ -23,3 +29,6 @@ def compare_price(symbol, comparison_symbol, all_data=True, aggregate=1, exchang
 
 
 print(compare_price('BTC', 'USD'))
+
+
+
